@@ -25,13 +25,13 @@ services:
     restart: on-failure
     environment:
       # Mail settings (required for signup confirmation and notifications)
-      - MAIL_HOST=${MAIL_HOST:?}
-      - MAIL_USERNAME=${MAIL_USERNAME:?}
-      - MAIL_PASSWORD=${MAIL_PASSWORD:?}
+      - MAIL_HOST=${MAIL_HOST:-}
+      - MAIL_USERNAME=${MAIL_USERNAME:-}
+      - MAIL_PASSWORD=${MAIL_PASSWORD:-}
       - MAIL_PORT=${MAIL_PORT:-587}
       - MAIL_SECURE=${MAIL_SECURE:-false}
       - MAIL_FROM_NAME=${MAIL_FROM_NAME:-Bigcapital}
-      - MAIL_FROM_ADDRESS=${MAIL_FROM_ADDRESS:?}
+      - MAIL_FROM_ADDRESS=${MAIL_FROM_ADDRESS:-}
       # Database
       - DB_HOST=mysql
       - DB_USER=${SERVICE_USER_MYSQL}
