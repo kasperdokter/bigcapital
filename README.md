@@ -8,7 +8,9 @@
   Unofficial Coolify deployment template for <a href="https://bigcapital.app">Bigcapital</a> — open-source accounting and financial management software.
 </p>
 
----
+<p align="center">
+  The official Bigcapital docker-compose requires building images from source. This repo provides a standalone compose that uses pre-built images only, making deployment significantly simpler — no build step needed.
+</p>
 
 > ⚠️ **This template is not officially maintained.** It may break when Bigcapital releases breaking changes. Use at your own risk.
 
